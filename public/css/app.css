@@ -1,0 +1,193 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);/* CSS reset */
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+input {
+  border: 1px solid #b0b0b0;
+  padding: 3px 5px 4px;
+  color: #979797;
+  width: 190px;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before,
+q:after {
+  content: "";
+}
+
+abbr,
+acronym {
+  border: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background: #1d1d1d;
+  color: #fff;
+  padding-bottom: 40px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+}
+
+#addMovie {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  padding: 8px 12px;
+  background: #000;
+  color: #fff;
+  opacity: 0.85;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+#addMovie:hover {
+  opacity: 1;
+}
+
+#movies-index #movies-list {
+  padding-top: 2em;
+}
+
+#movies-index .movie {
+  /* display: flex
+  * flex-flow: row
+  * justify-content: space-between */
+  border-bottom: solid 1px #333;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+}
+
+#movies-index .movie.is-seen .movie-details {
+  color: #aaa;
+}
+
+#movies-index .movie.is-seen .title strong {
+  color: #bbb;
+  text-decoration: line-through;
+}
+
+#movies-index .movie .movie-details {
+  flex-grow: 1;
+  overflow-x: hidden;
+  background: transparent;
+  color: #fff;
+  border: none;
+  text-align: left;
+  font-size: 0.8em;
+}
+
+#movies-index .movie .movie-details small {
+  color: #ccc;
+}
+
+#movies-index .movie .movie-details > div {
+  margin-bottom: 0.6em;
+}
+
+#movies-index .movie .movie-actions {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  padding-top: 0.5em;
+}
+
+#movies-index .movie [class*=-button] a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#movies-index .accordion .accordion-item {
+  background-color: transparent;
+}
+
+#movies-index .accordion .accordion-button {
+  background-color: transparent;
+  color: white;
+}
+
+#movies-index .accordion .accordion-button:after {
+  content: none;
+}
+
+#movies-index .accordion .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: white;
+}
+

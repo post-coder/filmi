@@ -1,0 +1,111 @@
+body
+  font-family: 'Nunito', sans-serif
+
+  background: #1d1d1d
+  color: #fff
+
+  padding-bottom: 40px
+
+a
+  text-decoration: none
+  
+  &:hover
+    color: inherit
+
+
+#addMovie
+  position: fixed
+
+  right: 16px
+  bottom: 16px
+
+  padding: 8px 12px
+
+  background: #000
+  color: #fff
+
+  opacity: .85
+
+  border-radius: 8px
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .7)
+
+  &:hover
+    opacity: 1
+  
+
+#movies-index
+
+  #movies-list
+    padding-top: 2em
+
+  .movie
+    /*
+      display: flex
+      flex-flow: row
+      justify-content: space-between
+
+    border-bottom: solid 1px #333
+    padding-bottom: .5em
+    margin-bottom: 1em
+
+
+    &.is-seen
+      .movie-details
+        color: #aaa
+
+      .title strong
+        color: #bbb
+        text-decoration: line-through
+      
+
+
+    .movie-details
+      flex-grow: 1
+
+      overflow-x: hidden
+
+      background: transparent
+      color: #fff
+      border: none
+
+      text-align: left
+
+
+      font-size: .8em
+
+      small
+        color: #ccc
+
+      &>div
+        margin-bottom: .6em
+
+    .movie-actions
+      display: flex
+      flex-flow: row
+      justify-content: space-around
+
+      padding-top: .5em
+
+      
+
+    [class*="-button"] a
+      color: rgba(255,255,255,.7)
+
+
+  .accordion
+    .accordion-item
+      background-color: transparent
+
+    .accordion-button
+      background-color: transparent
+      color: white
+
+      //removes the accordion arrow
+      &:after
+        content: none
+      
+
+    .accordion-button:not(.collapsed)
+      background-color: transparent
+      color: white
